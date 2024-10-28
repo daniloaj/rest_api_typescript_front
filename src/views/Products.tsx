@@ -15,7 +15,7 @@ export const Products = () => {
 
   const fetchProducts = async () => {
     const updatedProducts = await getProducts();
-    setProducts(updatedProducts);
+    setProducts(updatedProducts!);
   };
 
   const handleEditAvailability = async (id: number) => {
